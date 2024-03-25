@@ -154,3 +154,29 @@ select * from YAZARLAR
 insert into UYELER values ('Halil','Ekinci','Erkek',5445379893,'halilekinci124@gmail.com',1)
 insert into ADRESLER values('İstiklal','Selimiye','2514','Kayseri',38000,'Türkiye')
 update ADRESLER set CADDE= 'Anamur' where ADRES_NO= 1
+
+
+insert into UYELER values ('Halil','Ekinci','Erkek',5445379893,'halilekinci124@gmail.com',1)
+insert into UYELER values ('Volkan','Yıldırım','Erkek',5362382795,'volkanyildirim@gmail.com',2)
+
+insert into ADRESLER values('İstiklal','Selimiye','2514','Kayseri',38000,'Türkiye')
+insert into ADRESLER values('Cumhuriyet','Anbar','2565','Kayseri',38000,'Türkiye')
+
+insert into KATEGORILER values('Roman')
+insert into KATEGORILER values('Bilim-Kurgu')
+
+insert into KITAPLAR values ('AD124','Fahrenheit451',2021,400)
+insert into KITAPLAR values ('AD125','Hayvan Çiftliği',1999,150)
+
+insert into YAZARLAR values ('Ray ','Bradbury')
+insert into yazarlar values ('George','Orwell')
+
+insert into KUTUPHANE values ('Sezai Karakoç','Kütüphane',1)
+insert into KUTUPHANE values ('Babil','Kütüphane',2)
+
+insert into KITAP_KUTUPHANE values (2,'AD124',5)
+insert into KITAP_KUTUPHANE values (2,'AD125',4)
+
+
+insert into EMANET values ('AD124',7,2,'25.03.2024','01.04.2024')
+insert into EMANET values ('AD125',8,2,'25.03.2024','28.03.2024')
