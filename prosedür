@@ -1,0 +1,15 @@
+select * from TBLBANKALAR
+select * from TBLFIRMALAR
+select * from TBLILLER
+select * from TBLILCELER
+
+--prosedür örneği--
+create procedure BankaBilgiler
+as 
+select BANKAADI,TBLBANKALAR.IL,TBLBANKALAR.ILCE,SUBE,IBAN,HESAPNO,YETKILI,TELEFON,TARIH,HESAPTURU,AD 
+FROM TBLBANKALAR
+inner join TBLFIRMALAR 
+on TBLBANKALAR.FIRMAID = TBLFIRMALAR.ID
+
+exec BankaBilgiler
+--prosedür örneği--
